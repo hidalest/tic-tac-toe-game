@@ -1,0 +1,47 @@
+@import "../sassStyles/variables";
+
+.playerPick-title {
+  color: $grey;
+}
+.btn-container {
+  button {
+    width: 50%;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: $grey;
+    cursor: pointer;
+    transition: 0.25s background-color ease-out;
+
+    &:hover {
+      background-color: rgba($grey, 0.2);
+      color: rgba($green-strong, 0.2);
+    }
+
+    .mark {
+      font-size: 5rem;
+      width: 90%;
+      color: $grey;
+      font-weight: bolder;
+    }
+
+    .selected {
+      color: $green-strong;
+      background-color: $grey;
+      border-radius: 1rem;
+      transition: 0.25s background-color ease-out;
+    }
+  }
+
+  background-color: $green-strong;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.playerPick-tip {
+  color: $grey;
+}
