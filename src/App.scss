@@ -1,0 +1,21 @@
+@import "./sassStyles/variables";
+
+.App {
+  text-align: center;
+  background-color: $green-strong;
+}
+
+.game-symbol {
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+.game-circle {
+  color: $green-light;
+  font-size: 7.5rem;
+}
+
+.game-close {
+  color: $yellow;
+  font-size: 8.8rem;
+}
