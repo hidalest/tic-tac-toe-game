@@ -1,4 +1,4 @@
-import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface InitialGameStateInterface {
   currentPlayer: 0 | 1;
@@ -11,7 +11,7 @@ const initialState: InitialGameStateInterface = {
 };
 
 const gameStoreSlice = createSlice({
-  name: 'gameStore',
+  name: "gameStore",
   initialState,
   reducers: {
     togglePlayer(state: InitialGameStateInterface) {
