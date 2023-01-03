@@ -6,11 +6,13 @@ interface GameMarkInterface {
 }
 
 const GameMark = ({ mark, className }: GameMarkInterface) => {
+  const realMark = mark === "circle" ? "trip_origin" : mark;
+
   return (
     <span
       className={`material-symbols-outlined game-symbol game-${mark} ${className}`}
     >
-      {mark}
+      {realMark}
     </span>
   );
 };

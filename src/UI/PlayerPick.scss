@@ -25,15 +25,18 @@
       color: $grey;
       font-weight: bolder;
     }
-
-    .selected {
-      color: $green-strong;
-      background-color: $grey;
-      border-radius: 1rem;
-      transition: 0.25s background-color ease-out;
-    }
   }
 
+  button.selected {
+    color: $green-strong;
+    background-color: $grey;
+    border-radius: 1rem;
+    transition: 0.25s background-color ease-out;
+
+    .mark {
+      color: $green-strong;
+    }
+  }
   background-color: $green-strong;
   display: flex;
   justify-content: center;

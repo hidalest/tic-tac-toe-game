@@ -14,17 +14,17 @@ const PlayerPick = () => {
     <Card className="card">
       <h2 className="playerPick-title">Pick Player's Mark</h2>
       <section className="btn-container">
-        <button onClick={onClickButton}>
-          <GameMark
-            mark="close"
-            className={`${"mark"} ${activeClass == 0 ? "selected" : ""}`}
-          />
+        <button
+          onClick={onClickButton}
+          className={`${activeClass == 0 ? "selected" : ""}`}
+        >
+          <GameMark mark="close" className="mark" />
         </button>
-        <button onClick={onClickButton}>
-          <GameMark
-            mark="circle"
-            className={`${"mark"} ${activeClass == 1 ? "selected" : ""}`}
-          />
+        <button
+          onClick={onClickButton}
+          className={`${activeClass == 1 ? "selected" : ""}`}
+        >
+          <GameMark mark="circle" className="mark" />
         </button>
       </section>
 
